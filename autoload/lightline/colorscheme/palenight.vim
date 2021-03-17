@@ -21,10 +21,12 @@ let s:p_black = ["#292D3E", 235, 0]
 let s:p.normal.left     = [ [ s:p_black, s:p_purple ], [ s:p_purple, s:p_menu_grey ] ]
 let s:p.normal.right    = copy(s:p.normal.left)
 let s:p.normal.middle   = [ [ s:p_comment_grey, s:p_black ] ]
-let s:p.normal.warning  = [ [ s:p_black, s:p_yellow ] ]
-let s:p.normal.error    = [ [ s:p_black, s:p_red ] ]
+let s:p.normal.warning  = [ [ s:p_yellow, s:p_menu_grey ] ]
+let s:p.normal.error    = [ [ s:p_red, s:p_menu_grey ] ]
 
-let s:p.insert.left     = [ [ s:p_black, s:p_blue ], [ s:p_blue, s:p_menu_grey ] ]
+" [foreground, background]
+" [ block, block ]
+let s:p.insert.left     = [ [ s:p_black, s:p_dark_yellow ], [ s:p_dark_yellow, s:p_menu_grey ] ]
 let s:p.insert.right    = copy(s:p.insert.left)
 let s:p.insert.middle   = copy(s:p.normal.middle)
 
