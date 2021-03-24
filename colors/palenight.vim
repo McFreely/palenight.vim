@@ -140,7 +140,7 @@ call s:h("Todo", { "fg": s:purple }) " anything that needs extra attention; most
 " Highlighting Groups (descriptions and ordering from `:h hitest.vim`) {{{
 
 call s:h("ColorColumn", { "bg": s:cursor_grey }) " used for the columns set with 'colorcolumn'
-call s:h("Conceal", {}) " placeholder characters substituted for concealed text (see 'conceallevel')
+call s:h("Conceal", { "bg": s:red, "fg": s:cyan }) " placeholder characters substituted for concealed text (see 'conceallevel')
 call s:h("Cursor", { "fg": s:black, "bg": s:red }) " the character under the cursor
 call s:h("CursorIM", {}) " like Cursor, but used when in IME mode
 call s:h("CursorColumn", { "bg": s:cursor_grey }) " the screen column that the cursor is in when 'cursorcolumn' is set
@@ -343,7 +343,7 @@ call s:h("mkdInlineURL", { "fg": s:light_red })
 call s:h("mkdListItem", { "fg": s:yellow })
 call s:h("markdownOrderedListMarker", { "fg": s:red })
 call s:h("markdownIdDeclaration", { "fg": s:blue })
-call s:h("mkdLink", { "fg": s:white })
+call s:h("mkdLink", { "fg": s:cyan })
 call s:h("markdownLinkDelimiter", { "fg": s:white })
 call s:h("mkdURL", { "fg": s:light_red })
 
